@@ -232,6 +232,76 @@ Gibt die Kalibrierung zurück, wie von :func:`Set Calibration` gesetzt.
 }]
 })
 
+com['packets'].append({
+'type': 'function',
+'name': 'Get Power Time',
+'elements': [('Power', 'int32', 1, 'out', {}),
+             ('Time', 'uint32', 1, 'out', {})],
+'since_firmware': [2, 0, 0],
+'doc': ['bf', {
+'en':
+"""
+TODO.
+""",
+'de':
+"""
+TODO.
+"""
+}]
+})
+
+com['packets'].append({
+'type': 'function',
+'name': 'Set Power Time Callback Configuration',
+'elements': [('Enable', 'bool', 1, 'in', {'default': False})],
+'since_firmware': [2, 0, 0],
+'doc': ['ccf', {
+'en':
+"""
+TODO.
+""",
+'de':
+"""
+TODO.
+"""
+}]
+})
+
+com['packets'].append({
+'type': 'function',
+'name': 'Get Power Time Callback Configuration',
+'elements': [('Enable', 'bool', 1, 'out', {'default': False})],
+'since_firmware': [2, 0, 0],
+'doc': ['ccf', {
+'en':
+"""
+TODO.
+""",
+'de':
+"""
+TODO.
+"""
+}]
+})
+
+com['packets'].append({
+'type': 'callback',
+'name': 'Power Time',
+'elements': [('Power', 'int32', 1, 'out', {}),
+             ('Time', 'uint32', 1, 'out', {})],
+'since_firmware': [2, 0, 0],
+'doc': ['c', {
+'en':
+"""
+TODO.
+""",
+'de':
+"""
+TODO.
+"""
+}]
+})
+
 com['examples'].append({
 'name': 'Simple',
 'functions': [('getter', ('Get Voltage', 'voltage'), [(('Voltage', 'Voltage'), 'int32', 1, 1000.0, 'V', None)], []),
