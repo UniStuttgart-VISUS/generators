@@ -13,7 +13,7 @@ from generators.configs.openhab_commonconfig import *
 
 com = {
     'author': 'Olaf Lüke <olaf@tinkerforge.com>',
-    'api_version': [2, 0, 0],
+    'api_version': [2, 0, 1],
     'category': 'Bricklet',
     'device_identifier': 2105,
     'name': 'Voltage Current V2',
@@ -237,7 +237,7 @@ com['packets'].append({
 'name': 'Get Power Time',
 'elements': [('Power', 'int32', 1, 'out', {}),
              ('Time', 'uint32', 1, 'out', {})],
-'since_firmware': [2, 0, 0],
+'since_firmware': [99, 0, 0],
 'doc': ['bf', {
 'en':
 """
@@ -254,7 +254,7 @@ com['packets'].append({
 'type': 'function',
 'name': 'Set Power Time Callback Configuration',
 'elements': [('Enable', 'bool', 1, 'in', {'default': False})],
-'since_firmware': [2, 0, 0],
+'since_firmware': [99, 0, 0],
 'doc': ['ccf', {
 'en':
 """
@@ -271,7 +271,7 @@ com['packets'].append({
 'type': 'function',
 'name': 'Get Power Time Callback Configuration',
 'elements': [('Enable', 'bool', 1, 'out', {'default': False})],
-'since_firmware': [2, 0, 0],
+'since_firmware': [99, 0, 0],
 'doc': ['ccf', {
 'en':
 """
@@ -289,7 +289,7 @@ com['packets'].append({
 'name': 'Power Time',
 'elements': [('Power', 'int32', 1, 'out', {}),
              ('Time', 'uint32', 1, 'out', {})],
-'since_firmware': [2, 0, 0],
+'since_firmware': [99, 0, 0],
 'doc': ['c', {
 'en':
 """
@@ -306,7 +306,7 @@ com['packets'].append({
 'type': 'function',
 'name': 'Get Time',
 'elements': [('Time', 'uint32', 1, 'out', {})],
-'since_firmware': [2, 0, 0],
+'since_firmware': [99, 0, 0],
 'doc': ['bf', {
 'en':
 """
