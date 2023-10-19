@@ -302,6 +302,23 @@ TODO.
 }]
 })
 
+com['packets'].append({
+'type': 'function',
+'name': 'Get Time',
+'elements': [('Time', 'uint32', 1, 'out', {})],
+'since_firmware': [2, 0, 0],
+'doc': ['bf', {
+'en':
+"""
+TODO.
+""",
+'de':
+"""
+TODO.
+"""
+}]
+})
+
 com['examples'].append({
 'name': 'Simple',
 'functions': [('getter', ('Get Voltage', 'voltage'), [(('Voltage', 'Voltage'), 'int32', 1, 1000.0, 'V', None)], []),
